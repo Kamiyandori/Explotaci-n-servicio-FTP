@@ -107,20 +107,4 @@ cat flag.txt
 #### Flag:
 ```text
 ******************************** (32 caracteres hexadecimales)
-```
 
----
-
-## 🧠 Conceptos Aprendidos & Preguntas del Módulo
-
-1. **¿Qué significa FTP?**
-   * *File Transfer Protocol* (Protocolo de Transferencia de Archivos). Se ejecuta habitualmente en el puerto **21/tcp**.
-2. **¿Cómo mostrar el menú de ayuda del cliente FTP?**
-   * `ftp -?` o `ftp -h`
-3. **¿Cuál es el usuario por defecto para acceder sin credenciales?**
-   * `anonymous`
-4. **¿Cuál es el comando utilizado para descargar archivos desde una sesión de FTP?**
-   * `get`
-
----
-*Writeup creado para documentación personal y repositorio de aprendizaje en Ciberseguridad.*
