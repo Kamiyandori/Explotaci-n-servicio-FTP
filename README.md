@@ -108,7 +108,7 @@ cat flag.txt
 ```text
 ******************************** (32 caracteres hexadecimales)
 
----
+```
 
 ## 🧠 Conceptos Aprendidos & Preguntas del Módulo
 
