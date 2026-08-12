@@ -1,0 +1,21 @@
+# Hack The Box & CTF Flags / Sensitive Information
+*.flag
+flag.txt
+flags/
+
+# Nmap output files & scans
+*.gnmap
+*.nmap
+*.xml
+scan.txt
+
+# Temporary files & Editor settings
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# OS / Terminal histories & logs
+*.log
