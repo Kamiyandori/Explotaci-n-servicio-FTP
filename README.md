@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/31000056/README.md)
 # Hack The Box - Fawn Writeup
 
 ![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-Fawn-green?style=for-the-badge&logo=hackthebox)
