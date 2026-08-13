@@ -32,7 +32,7 @@ Writeup y documentación del proceso de resolución de la máquina **Crocodile**
 Comenzamos comprobando la conectividad y ejecutando un escaneo completo de puertos y detección de versiones con `nmap`:
 
 ```bash
-nmap -sC -sV 10.129.1.15
+nmap -sC -sV 10.129.x.x
 ```
 
 ### Resultados del escaneo:
@@ -47,7 +47,7 @@ Al detectar que el servidor FTP permite la entrada anónima:
 
 1. Nos conectamos usando el usuario `Anonymous`:
    ```bash
-   ftp 10.129.1.15
+   ftp 10.129.x.x
    ```
 2. Listamos el contenido disponible en el servidor:
    ```ftp
@@ -73,13 +73,13 @@ Al detectar que el servidor FTP permite la entrada anónima:
 Realizamos una enumeración de rutas en el puerto 80 buscando específicamente archivos con extensión `.php`:
 
 ```bash
-gobuster dir -u [http://10.129.1.15/](http://10.129.1.15/) -w /usr/share/wordlists/dirb/common.txt -x php
+gobuster dir -u [http://10.129.x.x/](http://10.129.x.x/) -w /usr/share/wordlists/dirb/common.txt -x php
 ```
 
 **Resultado:** Identificamos la ruta `/login.php`.
 
 ### 2. Acceso al Panel de Administración y Captura de Flag
-1. Abrimos el navegador y accedemos a `http://10.129.1.15/login.php`.
+1. Abrimos el navegador y accedemos a `http://10.129.x.x/login.php`.
 2. Introducimos el usuario `admin` (obtenido de `allowed.userlist`) y la clave correspondiente hallada en `allowed.userlist.passwd`.
 3. Al autenticarnos correctamente, la aplicación nos redirige al panel `/dashboard.php`, donde se encuentra la **flag**.
 
